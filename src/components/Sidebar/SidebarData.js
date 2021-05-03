@@ -11,7 +11,7 @@ export const SidebarData = [
     subNav: [
       {
         title: "Why 4AM",
-        path: "/users",
+        path: "/why",
         icon: <IoIcons.IoIosPaper />,
       },
       {
