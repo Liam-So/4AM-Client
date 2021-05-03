@@ -34,7 +34,7 @@ function Scholarship() {
       application: application.value,
     };
 
-    let response = await fetch("http://localhost:8001/scholarship", {
+    let response = await fetch(`${process.env.REACT_APP_API}/scholarship`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",
