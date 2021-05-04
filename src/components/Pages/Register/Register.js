@@ -46,7 +46,7 @@ function Register() {
                 <div className="max-w-2xl px-6 text-center mx-auto">
                     <h2 className="text-3xl font-semibold text-gray-800">Registration now open!</h2>
                     <p className="text-gray-600 mt-4">The 2020 4AM Camp will run the week of August 17-20, 2020 at the Caledonia Jr High Outdoor Courts. The cost of the camp is $100. All proceeds from the camp go towards the Andrew Milner Memorial Scholarship.</p>
-                    <p className="text-gray-600 mt-4">Click here to read how we will be delivering our basketball program while complying with the NS Provincal Health Guidelines in regard to the COVID-19 pandemic. We are commiteed to holding thesafety of our athletes and coaches as our top prioity. Athletes will be required to sign a awiver at the start of the camp and fill out COVID-19 screenings in advance of the camp and daily during the camp.</p>
+                    <p className="text-gray-600 mt-4">Click here to read how we will be delivering our basketball program while complying with the NS Provincal Health Guidelines in regard to the COVID-19 pandemic. We are committed to holding the safety of our athletes and coaches as our top prioity. Athletes will be required to sign a waiver at the start of the camp and fill out COVID-19 screenings in advance of the camp and daily during the camp.</p>
 
                 </div>
             </section>

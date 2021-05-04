@@ -84,7 +84,7 @@ function Team() {
                       {coach.name}
                     </Typography>
                     <Typography
-                      variant="body2"
+                      variant="subtitle1"
                       color="textSecondary"
                       style={{ fontFamily: "Lato" }}
                     >
