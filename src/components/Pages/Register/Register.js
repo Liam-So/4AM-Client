@@ -69,7 +69,6 @@ function Register() {
     <div>
       <Topbar transparent={true}/>
       {availableProducts.length ? <RegisterCamp /> : <EmptyCamp />}
-      <RegisterCamp />
     </div>
   );
 }
