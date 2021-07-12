@@ -46,9 +46,7 @@ function Register() {
                 <div className="max-w-2xl px-6 text-center mx-auto">
                     <h2 className="text-3xl font-semibold text-gray-800">Registration now open!</h2>
                     <p className="text-gray-600 mt-4">The 2021 4AM Camp will run the week of August 16-19 (Aug 20 will be a rain date -if it rains on one of the days from Monday to Thursday the camp will be pushed one day and we will go on Friday) at the Caledonia Jr High Outdoor Courts. The cost of the camp is $100. All proceeds from the camp go towards the Andrew Milner Memorial Scholarship.</p>
-                    <p className="text-gray-600 mt-4">We are committed to holding the safety of our athletes and coaches as our top priority. Athletes will be required to sign a waiver at the start of the camp and fill out COVID-19 screenings in advance of the camp and daily during the camp.</p>
                     <p className="text-gray-600 mt-4">Boys entering grade 9-10 this September will have a session at <strong>5-7 pm</strong> while boys entering grade 11-12 this September will have a session at <strong>7-9 pm</strong></p>
-
                 </div>
             </section>
           
