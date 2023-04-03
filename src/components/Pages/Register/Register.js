@@ -15,6 +15,7 @@ function Register() {
       setProducts(req.data);
     }
 
+
     fetchData();
   }, []);
 
@@ -32,7 +33,7 @@ function Register() {
             Registrations are currently closed.
           </div>
           <div className="text-lg mb-8">
-            Stay tuned to our social media accounts or Registration announcements. Thank you for your interest!
+            Stay tuned to our social media accounts or Registration announcements. Thank you for your interest.
           </div>
         </div>
       </div>
