@@ -20,7 +20,9 @@ function Scholarship() {
       city,
       school,
       team,
-      application,
+      financial_need,
+      cost_of_travel,
+      character,
     } = e.target.elements;
 
     let msg = {
@@ -31,7 +33,9 @@ function Scholarship() {
       city: city.value,
       school: school.value,
       team: team.value,
-      application: application.value,
+      financial_need: financial_need.value,
+      cost_of_travel: cost_of_travel.value,
+      character: character.value,
     };
 
     let response = await fetch(`${process.env.REACT_APP_API}/scholarship`, {
@@ -75,7 +79,7 @@ function Scholarship() {
                           htmlFor="first_name"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          First name
+                          First Name
                         </label>
                         <input
                           type="text"
@@ -91,7 +95,7 @@ function Scholarship() {
                           htmlFor="last_name"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Last name
+                          Last Name
                         </label>
                         <input
                           type="text"
@@ -107,7 +111,7 @@ function Scholarship() {
                           htmlFor="email"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Email address
+                          Email Address
                         </label>
                         <input
                           type="text"
@@ -139,7 +143,7 @@ function Scholarship() {
                           htmlFor="city"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          City
+                          Hometown
                         </label>
                         <input
                           type="text"
@@ -179,37 +183,83 @@ function Scholarship() {
                           required
                           className="mt-1 block w-full py-2 px-3 border border-gray-300 bg-white rounded-md shadow-sm focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm"
                         >
-                          <option>U15</option>
-                          <option>U17</option>
+                          <option>U15 Girls</option>
+                          <option>U15 Boys</option>
+                          <option>U17 Girls</option>
+                          <option>U17 Boys</option>
                         </select>
                       </div>
 
                       <div className="col-span-6">
                         <label
-                          htmlFor="application"
+                          htmlFor="financial_need"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Application Question
+                          Application Question #1
                         </label>
                         <p className="mt-2 text-sm text-gray-500">
-                          Please share how this scholarship will impact you -
-                          you may speak to how it will impact you during the
-                          season with BNS this summer, how it will impact your
-                          future basketball journey, and/or how it will impact
-                          you as a person off the basketball court. <br />
-                          <br />
-                          We'd love to hear about your aspirations both on and
-                          off the court. Andrew embodied strong qualities of
-                          work ethic, leadership, humbleness, and gratitude,
-                          allowing him to be a champion on and off the court. We
-                          encourage you to highlight qualities like these in
-                          yourself. In the words of Andrew, "Never forget what
-                          made you who you are." (Max. 500 words).
+                          
+                          One of the aspects considered in the selection of the 4AM Award recepient is financial need. <br/>
+                          Please speak to how the funds would help allow you to play for the Provincial Team. (Max. 200 words).
+                          
                         </p>
                         <div className="mt-5">
                           <textarea
-                            id="application"
-                            name="application"
+                            id="financial_need"
+                            name="financial_need"
+                            rows="4"
+                            className="txt shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md whitespace-pre-wrap"
+                            placeholder="Your response here..."
+                            maxLength="3500"
+                            required
+                          ></textarea>
+                        </div>
+                      </div>
+                      
+                      <div className="col-span-6">
+                        <label
+                          htmlFor="cost_of_travel"
+                          className="block text-sm font-medium text-gray-700"
+                        >
+                          Application Question #2
+                        </label>
+                        <p className="mt-2 text-sm text-gray-500">
+                          
+                          A second aspect considered in the selection of the 4AM Award recepient is the burden of travel. <br/>
+                          Where will you be living during the spring/summer? How do you plan to travel to/from practice during the season? (Max. 200 words).
+                          
+                        </p>
+                        <div className="mt-5">
+                          <textarea
+                            id="cost_of_travel"
+                            name="cost_of_travel"
+                            rows="4"
+                            className="txt shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md whitespace-pre-wrap"
+                            placeholder="Your response here..."
+                            maxLength="3500"
+                            required
+                          ></textarea>
+                        </div>
+                      </div>
+
+                      <div className="col-span-6">
+                        <label
+                          htmlFor="character"
+                          className="block text-sm font-medium text-gray-700"
+                        >
+                          Application Question #3
+                        </label>
+                        <p className="mt-2 text-sm text-gray-500">
+                                                    
+                          The final aspect considered in the selection of the 4AM Award receipient is character. <br/>
+                          <br/>
+                          Andrew embodied strong characteristics of work ethic, leadership, humbleness, and gratitude, allowing him to be a champion on and off the court. We encourage you to highlight characteristics like these in yourself and how they relate to your aspirations both on and off the court. In the words of Andrew, "Never forget what made you who you are." (Max. 500 words).
+                          
+                        </p>
+                        <div className="mt-5">
+                          <textarea
+                            id="character"
+                            name="character"
                             rows="10"
                             className="txt shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md whitespace-pre-wrap"
                             placeholder="Your response here..."
@@ -218,6 +268,7 @@ function Scholarship() {
                           ></textarea>
                         </div>
                       </div>
+
                     </div>
                   </div>
 
@@ -252,8 +303,18 @@ function Scholarship() {
             </thead>
             <tbody className="text-m font-normal text-gray-700">
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Owen Cashen</td>
+                <td className="px-4 py-4">New Waterford</td>
+                <td className="px-4 py-4">2021-22</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Cohen McDonald</td>
+                <td className="px-4 py-4">New Waterford</td>
+                <td className="px-4 py-4">2021-22</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Coby Tunnicliff</td>
-                <td className="px-4 py-4">Cape Breton, Nova Scotia</td>
+                <td className="px-4 py-4">Riverview</td>
                 <td className="px-4 py-4">2018-19</td>
               </tr>
             </tbody>
