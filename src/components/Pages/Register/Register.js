@@ -33,7 +33,7 @@ function Register() {
             Registrations are currently closed.
           </div>
           <div className="text-lg mb-8">
-            Stay tuned to our social media accounts or Registration announcements. Thank you for your interest.
+            Stay tuned to our social media accounts for registration announcements. Thank you for your interest.
           </div>
         </div>
       </div>
@@ -46,7 +46,7 @@ function Register() {
         <section className="bg-white mt-20 mb-20">
           <div className="max-w-2xl px-6 text-center mx-auto">
             <h2 className="text-3xl font-semibold text-gray-800">Registration now open!</h2>
-            <p className="text-gray-600 mt-4">The 2022 4AM Camp will be held August 15-18 at Saint Mary's University. Athletes must be going into grades 9-12 this September. The girls group will go from 6-8pm and the boys group will go from 8-10pm. The cost of the camp is $100. All proceeds from the camp go towards the Andrew Milner Memorial Scholarship.</p>
+            <p className="text-gray-600 mt-4">The 2023 4AM Camp will be held August 14-17 at Studley Gymnasium (Dalhousie University). Athletes must be going into grades 9-12 this September. The girls group will go from 6-8pm and the boys group will go from 8-10pm. The cost of the camp is $100. All proceeds from the camp go towards the 4AM Award.</p>
           </div>
         </section>
 

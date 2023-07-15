@@ -13,7 +13,7 @@ export const DropdownData = [
         path: "/team",
       },
       {
-        title: "Scholarship",
+        title: "4AM Award",
         path: "/scholarship",
       },
       {
