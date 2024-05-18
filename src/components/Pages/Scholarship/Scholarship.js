@@ -81,7 +81,7 @@ function Scholarship() {
                   <div className="px-4 py-5 bg-white sm:p-6">
                     <div className="grid grid-cols-6 gap-6">
                       
-                    <div className="col-span-6 text-center">
+                    {/* <div className="col-span-6 text-center">
                         <h2 className="text-4xl font-semibold text-gray-800">4AM Award Application Form</h2>
                         <p className="mt-2 text-sm text-gray-500">
                         <br/>
@@ -92,7 +92,7 @@ function Scholarship() {
                         Applicants must also provide the name and phone number for a reference that can speak to their character. This person can be a former coach, teacher, etc. Do not use your current BNS Coach unless they have coached you during a previous season. We will contact all references.<br/>
                         <br/>
                         </p>
-                      </div>
+                      </div> */}
 
                       <div className="col-span-6 sm:col-span-3">
                         <label
