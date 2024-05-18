@@ -20,8 +20,6 @@ function Scholarship() {
       city,
       school,
       team,
-      //financial_need,
-      //cost_of_travel,
       character,
       reference_name,
       reference_relationship,
@@ -36,8 +34,6 @@ function Scholarship() {
       city: city.value,
       school: school.value,
       team: team.value,
-      //financial_need: financial_need.value,
-      //cost_of_travel: cost_of_travel.value,
       character: character.value,
       reference_name: reference_name.value,
       reference_relationship: reference_relationship.value,
@@ -279,7 +275,7 @@ function Scholarship() {
                           htmlFor="reference_phone"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Phone Number
+                          Reference Phone Number
                         </label>
                         <input
                           type="text"
