@@ -13,7 +13,7 @@ function PaymentFailed() {
                         <img className="w-32 h-32 rounded-full mx-auto" src={Check} alt="check"/>
                     </div>
                     <div className="p-2">
-                        <h3 className="pt-2 text-center text-xl text-gray-900 font-medium leading-8 ">Something went wrong</h3>
+                        <h3 className="pt-2 text-center text-xl text-gray-900 font-medium leading-8 ">Something went wrong.</h3>
                         <div className="pt-3 text-center text-gray-400 text-s font-semibold">
                             <p>There was an error processing your payment request.</p>
                         </div>

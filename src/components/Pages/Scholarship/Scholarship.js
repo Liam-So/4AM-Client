@@ -20,9 +20,12 @@ function Scholarship() {
       city,
       school,
       team,
-      financial_need,
-      cost_of_travel,
+      //financial_need,
+      //cost_of_travel,
       character,
+      reference_name,
+      reference_relationship,
+      reference_phone,
     } = e.target.elements;
 
     let msg = {
@@ -33,9 +36,12 @@ function Scholarship() {
       city: city.value,
       school: school.value,
       team: team.value,
-      financial_need: financial_need.value,
-      cost_of_travel: cost_of_travel.value,
+      //financial_need: financial_need.value,
+      //cost_of_travel: cost_of_travel.value,
       character: character.value,
+      reference_name: reference_name.value,
+      reference_relationship: reference_relationship.value,
+      reference_phone: reference_phone.value,
     };
 
     let response = await fetch(`${process.env.REACT_APP_API}/scholarship`, {
@@ -74,6 +80,20 @@ function Scholarship() {
                 <div className="shadow overflow-hidden sm:rounded-md">
                   <div className="px-4 py-5 bg-white sm:p-6">
                     <div className="grid grid-cols-6 gap-6">
+                      
+                    <div className="col-span-6 text-center">
+                        <h2 className="text-4xl font-semibold text-gray-800">4AM Award Application Form</h2>
+                        <p className="mt-2 text-sm text-gray-500">
+                        <br/>
+                        Fill out the form below to submit an application for the 4AM Award. <br/>
+                        <br/>
+                        Applicants must write their answer to the application question themsleves – if we suspect the asnwer was written by a parent/guardian it will not be considered. <br/>
+                        <br/>
+                        Applicants must also provide the name and phone number for a reference that can speak to their character. This person can be a former coach, teacher, etc. Do not use your current BNS Coach unless they have coached you during a previous season. We will contact all references.<br/>
+                        <br/>
+                        </p>
+                      </div>
+
                       <div className="col-span-6 sm:col-span-3">
                         <label
                           htmlFor="first_name"
@@ -192,69 +212,22 @@ function Scholarship() {
 
                       <div className="col-span-6">
                         <label
-                          htmlFor="financial_need"
-                          className="block text-sm font-medium text-gray-700"
-                        >
-                          Application Question #1
-                        </label>
-                        <p className="mt-2 text-sm text-gray-500">
-                          
-                          One of the aspects considered in the selection of the 4AM Award recepient is financial need. <br/>
-                          Please speak to how the funds would help allow you to play for the Provincial Team. (Max. 200 words).
-                          
-                        </p>
-                        <div className="mt-5">
-                          <textarea
-                            id="financial_need"
-                            name="financial_need"
-                            rows="4"
-                            className="txt shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md whitespace-pre-wrap"
-                            placeholder="Your response here..."
-                            maxLength="3500"
-                            required
-                          ></textarea>
-                        </div>
-                      </div>
-                      
-                      <div className="col-span-6">
-                        <label
-                          htmlFor="cost_of_travel"
-                          className="block text-sm font-medium text-gray-700"
-                        >
-                          Application Question #2
-                        </label>
-                        <p className="mt-2 text-sm text-gray-500">
-                          
-                          A second aspect considered in the selection of the 4AM Award recepient is the burden of travel. <br/>
-                          Where will you be living during the spring/summer? How do you plan to travel to/from practice during the season? (Max. 200 words).
-                          
-                        </p>
-                        <div className="mt-5">
-                          <textarea
-                            id="cost_of_travel"
-                            name="cost_of_travel"
-                            rows="4"
-                            className="txt shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md whitespace-pre-wrap"
-                            placeholder="Your response here..."
-                            maxLength="3500"
-                            required
-                          ></textarea>
-                        </div>
-                      </div>
-
-                      <div className="col-span-6">
-                        <label
                           htmlFor="character"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Application Question #3
+                          Application Question
                         </label>
                         <p className="mt-2 text-sm text-gray-500">
                                                     
-                          The final aspect considered in the selection of the 4AM Award receipient is character. <br/>
+                          The recipient of the 4AM Award is selected based on character. <br/>
                           <br/>
-                          Andrew embodied strong characteristics of work ethic, leadership, humbleness, and gratitude, allowing him to be a champion on and off the court. We encourage you to highlight characteristics like these in yourself and how they relate to your aspirations both on and off the court. In the words of Andrew, "Never forget what made you who you are." (Max. 500 words).
-                          
+                          Write about the teammate and person you are on and off the court and who/what in your life has shaped you into that person. A reminder that character has nothing to do with basketball skills.<br/>
+                          <br/>
+                          Andrew embodied strong characteristics of work ethic, leadership, humbleness, and gratitude, making him a champion on and off the court. We encourage you to highlight characteristics like these in yourself and how they relate to your aspirations both on and off the court. <br/>
+                          <br/>
+                          In the words of Andrew, "Never forget what made you who you are."<br/>
+                          <br/>
+                          Your answer must be a maximum of 500 words.
                         </p>
                         <div className="mt-5">
                           <textarea
@@ -263,10 +236,58 @@ function Scholarship() {
                             rows="10"
                             className="txt shadow-sm focus:ring-indigo-500 focus:border-indigo-500 mt-1 block w-full sm:text-sm border-gray-300 rounded-md whitespace-pre-wrap"
                             placeholder="Your response here..."
-                            maxLength="3500"
+                            maxLength="10000"
                             required
                           ></textarea>
                         </div>
+                      </div>
+
+                      <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <label
+                          htmlFor="reference_name"
+                          className="block text-sm font-medium text-gray-700"
+                        >
+                          Name of Reference
+                        </label>
+                        <input
+                          type="text"
+                          name="reference_name"
+                          id="reference_name"
+                          required
+                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        />
+                      </div>
+
+                      <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <label
+                          htmlFor="reference_relationship"
+                          className="block text-sm font-medium text-gray-700"
+                        >
+                          Relationship to Athlete
+                        </label>
+                        <input
+                          type="text"
+                          name="reference_relationship"
+                          id="reference_relationship"
+                          required
+                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        />
+                      </div>
+
+                      <div className="col-span-6 sm:col-span-6 lg:col-span-2">
+                        <label
+                          htmlFor="reference_phone"
+                          className="block text-sm font-medium text-gray-700"
+                        >
+                          Phone Number
+                        </label>
+                        <input
+                          type="text"
+                          name="reference_phone"
+                          id="reference_phone"
+                          required
+                          className="mt-1 focus:ring-indigo-500 focus:border-indigo-500 block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        />
                       </div>
 
                     </div>

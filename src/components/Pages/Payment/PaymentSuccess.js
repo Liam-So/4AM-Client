@@ -13,9 +13,9 @@ function PaymentSuccess() {
                         <img className="w-32 h-32 rounded-full mx-auto" src={Check} alt="check"/>
                     </div>
                     <div className="p-2">
-                        <h3 className="text-center text-xl text-gray-900 font-medium leading-8 ">You are all set!</h3>
+                        <h3 className="text-center text-xl text-gray-900 font-medium leading-8 ">You are registered!</h3>
                         <div className="text-center text-gray-400 text-s font-semibold">
-                            <p>Thank you for your purchase. You should receive a confirmation email shortly.</p>
+                            <p>You should receive a confirmation email shortly. Looking forward to seeing you at the 4AM Camp!</p>
                         </div>
 
                         <div className="pt-12 text-center text-gray-400 text-s font-semibold">

@@ -39,7 +39,7 @@ function Footer() {
 
             <Link
               className="social-icon-link"
-              to={"//twitter.com/4am_basketball?lang=en"}
+              to={"//twitter.com/4am_basketball"}
               target="_blank"
               aria-label="Twitter"
             >
@@ -47,7 +47,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link"
-              to={"//www.youtube.com/watch?v=aVMNvoV64AM&t=13s"}
+              to={"//www.youtube.com/watch?v=aVMNvoV64AM"}
               target="_blank"
               aria-label="Youtube"
             >
@@ -55,7 +55,7 @@ function Footer() {
             </Link>
             <Link
               className="social-icon-link"
-              to={"//www.facebook.com/4AM.Basketball.Camp/"}
+              to={"//www.facebook.com/4AM.Camp"}
               target="_blank"
               aria-label="Facebook"
             >

@@ -16,8 +16,7 @@ function Heading() {
                   Given Andrew's involvement in the Basketball Nova Scotia Provincial Teams,<br/>
                   Andrew’s family decided the award should be given to a BNS athlete. <br/>
                   <br/>
-                  The 4AM Award considers three aspects in the selection of the recipient: <br/>
-                  financial need, burden of travel (cost and time), and character.
+                  The recipient of the 4AM Award is selected based on character and financial need. <br/>
                   </p>
 
               </div>
