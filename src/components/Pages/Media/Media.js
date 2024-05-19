@@ -1,6 +1,6 @@
 import React from "react";
 import Topbar from "../../Topbar/Topbar";
-import Award from "../../../images/Andrew graphic.jpeg";
+import Award from "../../../images/LeadershipAward.jpeg";
 
 function Media() {
   return (

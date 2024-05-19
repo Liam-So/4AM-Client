@@ -9,7 +9,7 @@
 .home {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)),
-    url("./images/IMG_3840.JPG");
+    url("./images/HomePage.JPG");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -19,7 +19,7 @@
 .donate {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("./images/donation.JPG");
+    url("./images/Donation.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
@@ -29,7 +29,7 @@
 .gear {
   height: 100vh;
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-    url("./images/IMG_7609.JPG");
+    url("./images/Gear.jpg");
   background-position: center;
   background-size: cover;
   color: #fff;
