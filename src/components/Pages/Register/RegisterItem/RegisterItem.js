@@ -3,6 +3,7 @@ import { Card, CardMedia, CardContent, IconButton } from "@material-ui/core";
 import { AddShoppingCart } from "@material-ui/icons";
 import useStyles from "./styles";
 import { useStateValue } from "../../../StateProvider";
+import { Link } from "react-router-dom";
 
 function RegisterItem({ product }) {
   const classes = useStyles();
@@ -41,6 +42,8 @@ function RegisterItem({ product }) {
           <div className="flex justify-between">
             <p className="pt-3 text-m text-gray-500">{product.description}</p>
             <IconButton onClick={addToBasket} aria-label="Add to Cart">
+              <Link to="/cart">
+              </Link>
               <AddShoppingCart />
             </IconButton>
           </div>

@@ -49,7 +49,9 @@ function Register() {
             <p className="text-gray-600 mt-4">The 2024 4AM Camp will be held August 19-22 at Mount Saint Vincent University.<br/>
             Athletes must be going into grades 9-12 this September. <br/>
             <br/>
-            The girls group will go from 6-8pm and the boys group will go from 8-10pm. The cost of the camp is $100.  <br/>
+            The girls group will go from 6-8pm and the boys group will go from 8-10pm.<br/>
+            <br/>
+            The cost of the camp is $100.  <br/>
             <br/>
             All proceeds from the camp go towards the 4AM Award.</p>
           </div>
