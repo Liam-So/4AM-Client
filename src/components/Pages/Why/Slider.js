@@ -21,13 +21,13 @@ function Slider() {
   return (
     <Carousel {...settings}>
       <div>
-        <img src="images/sike.jpg" alt="" />
+        <img src="images/Andrew-Attacking-Dinos-2.jpg" alt="" />
       </div>
       <div>
-        <img src="images/beat.jpg" alt="" />
+        <img src="images/Andrew-Attacking-Dinos-3.jpg" alt="" />
       </div>
       <div>
-        <img src="images/ankles.jpg" alt="" />
+        <img src="images/Andrew-Attacking-Dinos-4.jpg" alt="" />
       </div>
     </Carousel>
   );

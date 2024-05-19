@@ -15,7 +15,7 @@ function Why() {
         <div
           className="absolute top-0 w-full h-full bg-center bg-cover"
           style={{
-            backgroundImage: "url('images/2.jpg')",
+            backgroundImage: "url('images/AndrewCuttingMesh.jpg')",
           }}
         >
           <span
@@ -45,7 +45,7 @@ function Why() {
             <div className="2xl:pt-12 pt-6 w-full 2xl:w-4/12 px-4 text-center">
               <div className="relative flex flex-col min-w-0 break-words w-full mb-8 ">
                 <img
-                  src="images/sike.jpg"
+                  src="images/Andrew-Attacking-Dinos-2.jpg"
                   alt=""
                   className="shadow-lg rounded-lg"
                 />
@@ -55,7 +55,7 @@ function Why() {
             <div className="w-full 2xl:w-4/12 px-4 text-center">
               <div className="relative flex flex-col min-w-0 break-words w-full mb-8 ">
                 <img
-                  src="images/beat.jpg"
+                  src="images/Andrew-Attacking-Dinos-3.jpg"
                   alt=""
                   className="shadow-lg rounded-lg"
                 />
@@ -65,7 +65,7 @@ function Why() {
             <div className="2xl:pt-10 pt-6 w-full 2xl:w-4/12 px-4 text-center">
               <div className="relative flex flex-col min-w-0 break-words w-full mb-8 ">
                 <img
-                  src="images/ankles.jpg"
+                  src="images/Andrew-Attacking-Dinos-4.jpg"
                   alt=""
                   className="shadow-lg rounded-lg"
                 />
@@ -123,7 +123,7 @@ function Why() {
               <img
                 alt="..."
                 className="max-w-full rounded-lg shadow-lg mb-5"
-                src="images/coach.jpg"
+                src="images/Andrew-DanVanhooren.jpg"
               />
             </div>
             <div className="w-full md:w-5/12 mx-auto">
