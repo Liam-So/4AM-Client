@@ -11,7 +11,10 @@ function Donate() {
       <div class="w-full h-screen flex justify-center items-center">
         <div class="mx-4 text-center text-white">
             <h1 class="font-bold text-5xl xl:text-6xl mb-4">Make a donation.</h1>
-            <h2 class="font-bold text-s lg:text-xl md:px-24 lg:px-60 xl:px-96 mb-12 ">If you would like to donate to our cause, you can do so through the link below. Your donation will go directly towards the 4AM Award fund. This award is presented to an athlete playing for a Basketball Nova Scotia Provincial Team with financial need and who truly embodies the character of Andrew - traits like work ethic, leadership, humbleness, and gratitude.</h2>
+            <h2 class="font-bold text-s lg:text-xl md:px-24 lg:px-60 xl:px-96 mb-12 ">
+              If you would like to donate to our cause, you can do so at the link below. Your donation will go directly towards the 4AM Award fund.<br/>
+              <br/>
+              This award is presented to an athlete playing for a Basketball Nova Scotia Provincial Team with financial need and who truly embodies the character of Andrew – traits like work ethic, leadership, humbleness, and gratitude.</h2>
 
             <div className="get-app flex space-x-5 mt-10 justify-center">
                 <form action="https://www.paypal.com/donate" method="post" target="_top">

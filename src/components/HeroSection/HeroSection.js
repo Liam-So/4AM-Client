@@ -43,9 +43,9 @@ function HeroSection({
                   {description}
                 </p>
                 {button ? (
-                  <button className="py-2 px-2 rounded-full bg-yellow-500">
+                  <button className="py-3 px-3 rounded-full bg-yellow-300 text-gray-700">
                     <Link to="/why">
-                      Read more here
+                      Read more
                     </Link>
                   </button>
                 ): (<></>)}

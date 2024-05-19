@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 export default makeStyles(() => ({
   root: {
     flexGrow: 1,
-    maxWidth: '95%',
+    maxWidth: '90%',
     height: '100%',
     paddingTop: '20px',
     border: 'none',

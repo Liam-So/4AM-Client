@@ -33,8 +33,8 @@ function Home() {
           4AM Basketball Camp
           <Link
             to={availableProducts.length ? "/register" : "/donate"}
-            style={{ color: "#fff", textDecoration: "none" }}
-            className="my-4 py-3 px-5 bg-yellow-500 rounded-full text-sm hover:bg-yellow-300 transition duration-300 ease-in-out flex items-center animate-bounce"
+            style={{ color: "#000", textDecoration: "none" }}
+            className="my-4 py-3 px-5 bg-yellow-300 rounded-full text-sm hover:bg-yellow-200 transition duration-300 ease-in-out flex items-center animate-bounce"
           >
             {availableProducts.length ? "REGISTER NOW" : "DONATE NOW"}
           </Link>

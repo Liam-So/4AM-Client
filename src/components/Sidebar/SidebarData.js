@@ -10,17 +10,17 @@ export const SidebarData = [
 
     subNav: [
       {
-        title: "Why 4AM",
+        title: "Mission",
         path: "/why",
         icon: <IoIcons.IoIosPaper />,
       },
       {
-        title: "Our Team",
+        title: "Team",
         path: "/team",
         icon: <IoIcons.IoMdPeople />,
       },
       {
-        title: "Scholarship",
+        title: "Award",
         path: "/scholarship",
         icon: <IoIcons.IoIosPaper />,
       },

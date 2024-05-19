@@ -5,15 +5,15 @@ export const DropdownData = [
 
     subNav: [
       {
-        title: "Why 4AM",
+        title: "Mission",
         path: "/why",
       },
       {
-        title: "Our Team",
+        title: "Team",
         path: "/team",
       },
       {
-        title: "4AM Award",
+        title: "Award",
         path: "/scholarship",
       },
       {

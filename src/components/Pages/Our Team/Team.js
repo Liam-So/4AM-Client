@@ -14,11 +14,11 @@ function Team() {
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }}>
       <Topbar transparent={true} />
       <div className={classes.title}>
-        <h1 className="mt-1 text-4xl tracking-tight font-extrabold text-red-500">
+        <h1 className="mt-1 text-4xl tracking-tight font-semibold text-gray-800">
           Our Coaching Staff
         </h1>
       </div>
-
+      
       <div className={classes.cardLines}>
         <Grid
           container
@@ -43,7 +43,7 @@ function Team() {
                     <Typography
                       variant="h5"
                       gutterBottom
-                      style={{ color: "#f00946", fontFamily: "Lato" }}
+                      style={{ color: "#4b5564", fontFamily: "Lato" }}
                     >
                       {coach.name}
                     </Typography>
@@ -62,7 +62,7 @@ function Team() {
         </Grid>
       </div>
 
-      <div className="mt-1 text-4xl tracking-tight font-extrabold text-red-500 flex justify-center">
+      <div className="mt-1 text-4xl tracking-tight font-semibold text-gray-800 flex justify-center">
         <h1>Guest Coaches</h1>
       </div>
 
@@ -79,7 +79,7 @@ function Team() {
                     <Typography
                       variant="h5"
                       gutterBottom
-                      style={{ color: "#f00946", fontFamily: "Lato" }}
+                      style={{ color: "#4b5564", fontFamily: "Lato" }}
                     >
                       {coach.name}
                     </Typography>

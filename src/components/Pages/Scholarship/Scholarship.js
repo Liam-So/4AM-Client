@@ -223,7 +223,7 @@ function Scholarship() {
                           <br/>
                           In the words of Andrew, "Never forget what made you who you are."<br/>
                           <br/>
-                          Your answer must be a maximum of 500 words.
+                          Your answer must be 500 words or less.
                         </p>
                         <div className="mt-5">
                           <textarea
@@ -275,7 +275,7 @@ function Scholarship() {
                           htmlFor="reference_phone"
                           className="block text-sm font-medium text-gray-700"
                         >
-                          Reference Phone Number
+                          Reference's Phone Number
                         </label>
                         <input
                           type="text"
@@ -322,37 +322,37 @@ function Scholarship() {
             <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Azhyawn Downey</td>
                 <td className="px-4 py-4">North Preston</td>
-                <td className="px-4 py-4">2022-23</td>
+                <td className="px-4 py-4">2023</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Sasha Dabb</td>
                 <td className="px-4 py-4">Halifax</td>
-                <td className="px-4 py-4">2022-23</td>
+                <td className="px-4 py-4">2023</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Ali Oluyole</td>
                 <td className="px-4 py-4">Wolfville</td>
-                <td className="px-4 py-4">2022-23</td>
+                <td className="px-4 py-4">2023</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Makyle Raaki</td>
                 <td className="px-4 py-4">Wolfville</td>
-                <td className="px-4 py-4">2021-22</td>
+                <td className="px-4 py-4">2022</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Owen Cashen</td>
                 <td className="px-4 py-4">New Waterford</td>
-                <td className="px-4 py-4">2021-22</td>
+                <td className="px-4 py-4">2022</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Cohen McDonald</td>
                 <td className="px-4 py-4">New Waterford</td>
-                <td className="px-4 py-4">2021-22</td>
+                <td className="px-4 py-4">2022</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Coby Tunnicliff</td>
                 <td className="px-4 py-4">Riverview</td>
-                <td className="px-4 py-4">2019-20</td>
+                <td className="px-4 py-4">2020</td>
               </tr>
             </tbody>
           </table>

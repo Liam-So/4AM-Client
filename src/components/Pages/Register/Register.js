@@ -24,7 +24,7 @@ function Register() {
   const EmptyCamp = () => (
     <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} exit={{ opacity: 0 }} className="gradient text-gray-600 min-h-screen flex items-center">
       <div className="container mx-auto p-4 flex flex-wrap items-center">
-        <div className="w-full md:w-5/12 text-center p-4">
+        <div className="w-full md:w-3/12 text-center p-4">
           <img src={Logo} alt="logo" />
         </div>
         <div className="w-full md:w-7/12 text-center md:text-left p-4">
