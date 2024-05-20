@@ -31,7 +31,7 @@ function RegisterItem({ product }) {
   };
 
   const openCartWindow = () => {
-    window.open("/cart")
+    window.open("/cart","_self")
   }
 
   return (
