@@ -4,6 +4,7 @@ import { AddShoppingCart } from "@material-ui/icons";
 import useStyles from "./styles";
 import { useStateValue } from "../../../StateProvider";
 import { Link } from "react-router-dom";
+import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 function RegisterItem({ product }) {
   const classes = useStyles();
@@ -26,14 +27,11 @@ function RegisterItem({ product }) {
         sku: product.sku,
       },
     });
+    window.open("/")
   };
 
   const openCartWindow = () => {
     window.open("/cart")
-  }
-
-  const addToShoppingCart = () => {
-    <AddShoppingCart />
   }
 
   return (
@@ -49,7 +47,8 @@ function RegisterItem({ product }) {
           </div>
           <div className="flex justify-between">
             <p className="pt-3 text-m text-gray-500">{product.description}</p>
-            <IconButton onClick={function(event){addToBasket(); addToShoppingCart(); openCartWindow();}} aria-label="Add to Cart">
+            <IconButton onClick={addToBasket} aria-label="Add to Cart">
+              <AddShoppingCart />
             </IconButton>
           </div>
         </CardContent>
