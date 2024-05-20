@@ -25,8 +25,11 @@ function RegisterItem({ product }) {
         sku: product.sku,
       },
     });
-    window.open("/cart","_self")
   };
+
+  const openCartWindow = () => {
+    window.open("/cart","_self")
+  }
 
   return (
     <div>
@@ -41,7 +44,7 @@ function RegisterItem({ product }) {
           </div>
           <div className="flex justify-between">
             <p className="pt-3 text-m text-gray-500">{product.description}</p>
-            <IconButton onClick={addToBasket} aria-label="Add to Cart">
+            <IconButton onClick={function(event){addToBasket(); openCartWindow();}} aria-label="Add to Cart">
               <AddShoppingCart />
             </IconButton>
           </div>
