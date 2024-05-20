@@ -3,8 +3,6 @@ import { Card, CardMedia, CardContent, IconButton } from "@material-ui/core";
 import { AddShoppingCart } from "@material-ui/icons";
 import useStyles from "./styles";
 import { useStateValue } from "../../../StateProvider";
-import { Link } from "react-router-dom";
-import { AiOutlineFundProjectionScreen } from "react-icons/ai";
 
 function RegisterItem({ product }) {
   const classes = useStyles();
@@ -27,12 +25,8 @@ function RegisterItem({ product }) {
         sku: product.sku,
       },
     });
-    window.open("/")
-  };
-
-  const openCartWindow = () => {
     window.open("/cart","_self")
-  }
+  };
 
   return (
     <div>
