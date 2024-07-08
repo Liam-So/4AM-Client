@@ -83,7 +83,7 @@ function Scholarship() {
                         <br/>
                         Fill out the form below to submit an application for the 4AM Award. <br/>
                         <br/>
-                        Applicants must write their answer to the application question themsleves – if we suspect the asnwer was written by a parent/guardian it will not be considered. <br/>
+                        Applicants must write their answer to the application question themsleves – if we suspect the answer was written by a parent/guardian it will not be considered. <br/>
                         <br/>
                         Applicants must also provide the name and phone number for a reference that can speak to their character. This person can be a former coach, teacher, etc. Do not use your current BNS Coach unless they have coached you during a previous season. We will contact all references.<br/>
                         <br/>

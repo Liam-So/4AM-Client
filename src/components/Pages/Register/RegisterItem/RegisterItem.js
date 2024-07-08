@@ -27,10 +27,6 @@ function RegisterItem({ product }) {
     });
   };
 
-  const openCartWindow = () => {
-    window.open("/cart","_self")
-  }
-
   return (
     <div>
       <Card className={classes.root}>
@@ -44,7 +40,7 @@ function RegisterItem({ product }) {
           </div>
           <div className="flex justify-between">
             <p className="pt-3 text-m text-gray-500">{product.description}</p>
-            <IconButton onClick={function(event){addToBasket(); openCartWindow();}} aria-label="Add to Cart">
+            <IconButton onClick={addToBasket} aria-label="Add to Cart">
               <AddShoppingCart />
             </IconButton>
           </div>
