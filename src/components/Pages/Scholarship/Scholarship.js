@@ -319,7 +319,27 @@ function Scholarship() {
               </tr>
             </thead>
             <tbody className="text-m font-normal text-gray-700">
-            <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Josh Moores</td>
+                <td className="px-4 py-4">Dartmouth</td>
+                <td className="px-4 py-4">2024</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Jakii Wright</td>
+                <td className="px-4 py-4">Beechville</td>
+                <td className="px-4 py-4">2024</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Maria Davignon</td>
+                <td className="px-4 py-4">Whites Lake</td>
+                <td className="px-4 py-4">2024</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Gabriella Feron</td>
+                <td className="px-4 py-4">Bedford</td>
+                <td className="px-4 py-4">2024</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Azhyawn Downey</td>
                 <td className="px-4 py-4">North Preston</td>
                 <td className="px-4 py-4">2023</td>
