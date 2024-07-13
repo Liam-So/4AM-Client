@@ -51,7 +51,7 @@ function Register() {
             <br/>
             The girls group will go from 6-8pm and the boys group will go from 8-10pm.<br/>
             <br/>
-            The cost of the camp is $100.  <br/>
+            The cost of the camp is $120.  <br/>
             <br/>
             All proceeds from the camp go towards the 4AM Award.</p>
           </div>
