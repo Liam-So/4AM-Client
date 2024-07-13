@@ -47,7 +47,7 @@ function Register() {
           <div className="max-w-2xl px-6 text-center mx-auto">
             <h2 className="text-3xl font-semibold text-gray-800">Registration now open!</h2>
             <p className="text-gray-600 mt-4">The 2024 4AM Camp will be held August 19-22 at Mount Saint Vincent University.<br/>
-            Athletes must be going into grades 9-12 this September. <br/>
+            Athletes must be going into grades 10-12 this September. <br/>
             <br/>
             The girls group will go from 6-8pm and the boys group will go from 8-10pm.<br/>
             <br/>
