@@ -319,19 +319,44 @@ function Scholarship() {
               </tr>
             </thead>
             <tbody className="text-m font-normal text-gray-700">
+            <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Travae Jones</td>
+                <td className="px-4 py-4">Upper Hammonds Plains</td>
+                <td className="px-4 py-4">2025</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Austin Wabbi</td>
+                <td className="px-4 py-4">Antigonish</td>
+                <td className="px-4 py-4">2025</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Alice MacDonald</td>
+                <td className="px-4 py-4">Sydney Forks</td>
+                <td className="px-4 py-4">2025</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Cadence MacLeod</td>
+                <td className="px-4 py-4">Halifax</td>
+                <td className="px-4 py-4">2025</td>
+              </tr>
+              <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
+                <td className="px-4 py-4">Abby Peterson</td>
+                <td className="px-4 py-4">Lockeport</td>
+                <td className="px-4 py-4">2025</td>
+              </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
                 <td className="px-4 py-4">Josh Moores</td>
                 <td className="px-4 py-4">Dartmouth</td>
                 <td className="px-4 py-4">2024</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td className="px-4 py-4">Jakii Wright</td>
-                <td className="px-4 py-4">Beechville</td>
+                <td className="px-4 py-4">Maria Davignon</td>
+                <td className="px-4 py-4">Whites Lake</td>
                 <td className="px-4 py-4">2024</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
-                <td className="px-4 py-4">Maria Davignon</td>
-                <td className="px-4 py-4">Whites Lake</td>
+                <td className="px-4 py-4">Jakii Wright</td>
+                <td className="px-4 py-4">Beechville</td>
                 <td className="px-4 py-4">2024</td>
               </tr>
               <tr className="hover:bg-gray-100 border-b border-gray-200 py-10">
