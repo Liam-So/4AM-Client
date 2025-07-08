@@ -46,12 +46,12 @@ function Register() {
         <section className="bg-white mt-20 mb-20">
           <div className="max-w-2xl px-6 text-center mx-auto">
             <h2 className="text-3xl font-semibold text-gray-800">Registration now open!</h2>
-            <p className="text-gray-600 mt-4">The 2024 4AM Camp will be held August 19-22 at Mount Saint Vincent University.<br/>
+            <p className="text-gray-600 mt-4">The 2025 4AM Camp will be held September 6-7 at Citadel High School.<br/>
             Athletes must be going into grades 10-12 this September. <br/>
             <br/>
-            The girls group will go from 6-8pm and the boys group will go from 8-10pm.<br/>
+            The girls group will go from 9-11am & 2-3:30pm each day and the boys group will go from 11am-1pm & 3:30-5pm each day.<br/>
             <br/>
-            The cost of the camp is $120.  <br/>
+            The cost of the camp is $120.<br/>
             <br/>
             All proceeds from the camp go towards the 4AM Award.</p>
           </div>
