@@ -280,7 +280,7 @@ function Checkout() {
       return (
         <div className="bg-white shadow-lg rounded p-6 md:p-8 text-center">
           <p className="text-gray-700 mb-6">
-            This athlete has a free/sponsored spot for this camp -- no payment is required.
+            As a 4AM Award recipient you do not need to pay a registration fee – click below to complete your registration.
           </p>
           <button
             onClick={completeFreeRegistration}
