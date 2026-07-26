@@ -15,7 +15,7 @@ function PaymentSuccess() {
                     <div className="p-2">
                         <h3 className="text-center text-xl text-gray-900 font-medium leading-8 ">Registration complete!</h3>
                         <div className="text-center text-gray-400 text-s font-semibold">
-                            <p>Your payment and registration details have both been received -- there's nothing else you need to do.</p>
+                            <p>Your payment and registration details have both been received - there's nothing else you need to do.</p>
                         </div>
 
                         <div className="pt-12 text-center text-gray-400 text-s font-semibold">
