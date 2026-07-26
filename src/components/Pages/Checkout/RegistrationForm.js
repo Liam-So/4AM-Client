@@ -30,7 +30,7 @@ const inputClasses =
 // stays accessible and keyboard-friendly, styled with the brand color.
 function RadioGroup({ name, options, value, onChange }) {
   return (
-    <div className="flex flex-wrap gap-x-6 gap-y-2">
+    <div className="flex flex-col gap-2">
       {options.map((option) => (
         <label
           key={option}

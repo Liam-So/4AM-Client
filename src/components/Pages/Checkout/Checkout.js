@@ -23,14 +23,11 @@ function Checkout() {
   const [waiverData, setWaiverData] = useState({ waiverDate: todayFormatted() });
   const [paymentError, setPaymentError] = useState(false);
 
-  // Free/sponsored-athlete bypass. Both the name list and the special
-  // code are checked server-side only (see /check-bypass) -- neither
-  // ever ships in this frontend bundle.
+  // Free/sponsored-athlete bypass. The free-athlete list is checked
+  // server-side only (see /check-bypass) -- it never ships in this
+  // frontend bundle.
   // 'checking' | 'eligible' | 'not-eligible'
   const [bypassStatus, setBypassStatus] = useState("checking");
-  const [bypassReason, setBypassReason] = useState(null); // 'name' | 'code'
-  const [specialCode, setSpecialCode] = useState("");
-  const [codeError, setCodeError] = useState(null);
   const [isFinalizing, setIsFinalizing] = useState(false);
 
   const isProd = true;
@@ -83,12 +80,7 @@ function Checkout() {
       .post("/check-bypass", { athleteName: formData.athleteName })
       .then((res) => {
         if (cancelled) return;
-        if (res.data.bypass) {
-          setBypassStatus("eligible");
-          setBypassReason("name");
-        } else {
-          setBypassStatus("not-eligible");
-        }
+        setBypassStatus(res.data.bypass ? "eligible" : "not-eligible");
       })
       .catch(() => {
         if (!cancelled) setBypassStatus("not-eligible");
@@ -145,21 +137,6 @@ function Checkout() {
     window.location.href = "/success";
   };
 
-  const applySpecialCode = async () => {
-    setCodeError(null);
-    try {
-      const res = await axios.post("/check-bypass", { code: specialCode });
-      if (res.data.bypass) {
-        setBypassStatus("eligible");
-        setBypassReason("code");
-      } else {
-        setCodeError("That code isn't valid.");
-      }
-    } catch (err) {
-      setCodeError("Couldn't verify that code right now. Please try again.");
-    }
-  };
-
   const completeFreeRegistration = async () => {
     setIsFinalizing(true);
 
@@ -167,8 +144,6 @@ function Checkout() {
     // still needs to be decremented exactly like a paid registration.
     await updateStock([basketItem]);
 
-    const paymentMethod =
-      bypassReason === "code" ? "Free - Special Code" : "Free - Name Match";
     const freeTransactionId = `FREE-${Date.now()}`;
 
     await axios.post("/transactions", {
@@ -177,7 +152,7 @@ function Checkout() {
       items: [basketItem],
     });
 
-    await saveRegistrationAndFinish(paymentMethod, freeTransactionId);
+    await saveRegistrationAndFinish("Free - Name Match", freeTransactionId);
   };
 
   const createOrder = async (data, actions) => {
@@ -310,28 +285,6 @@ function Checkout() {
         <p className="text-gray-600 text-center mb-6">
           Total due: <span className="font-semibold">${product.price} CAD</span>
         </p>
-
-        <div className="mb-6 pb-6 border-b border-gray-200">
-          <label className="block text-gray-900 font-medium text-sm mb-2">
-            Special Code
-          </label>
-          <div className="flex gap-2 max-w-sm">
-            <input
-              type="text"
-              className="flex-1 border-b-2 border-gray-200 focus:border-brand outline-none py-2 px-1 text-gray-800 bg-transparent"
-              value={specialCode}
-              onChange={(e) => setSpecialCode(e.target.value)}
-            />
-            <button
-              type="button"
-              onClick={applySpecialCode}
-              className="bg-brand hover:bg-brand-dark text-white text-sm font-medium py-2 px-4 rounded"
-            >
-              Apply
-            </button>
-          </div>
-          {codeError && <p className="text-red-500 text-sm mt-2">{codeError}</p>}
-        </div>
 
         <PayPalScriptProvider options={initialOptions}>
           <PayPalButtons

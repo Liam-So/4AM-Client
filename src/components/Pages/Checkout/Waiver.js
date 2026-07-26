@@ -30,6 +30,7 @@ const inputClasses =
 
 function Waiver({ waiverData, onChange, onBack, onNext }) {
   const [hasScrolledToEnd, setHasScrolledToEnd] = useState(false);
+  const [scrollWarning, setScrollWarning] = useState(false);
   const [errors, setErrors] = useState({});
   const scrollBoxRef = useRef(null);
 
@@ -38,7 +39,20 @@ function Waiver({ waiverData, onChange, onBack, onNext }) {
     if (!el) return;
     const reachedBottom =
       el.scrollHeight - el.scrollTop - el.clientHeight < 20;
-    if (reachedBottom) setHasScrolledToEnd(true);
+    if (reachedBottom) {
+      setHasScrolledToEnd(true);
+      setScrollWarning(false);
+    }
+  };
+
+  const handleCheckboxClick = (e) => {
+    if (!hasScrolledToEnd) {
+      // The checkbox isn't actually disabled (a disabled input suppresses
+      // the click event entirely, so we'd never see this attempt) --
+      // instead we just cancel the toggle ourselves and show the warning.
+      e.preventDefault();
+      setScrollWarning(true);
+    }
   };
 
   const handleChange = (field) => (e) => {
@@ -104,15 +118,23 @@ function Waiver({ waiverData, onChange, onBack, onNext }) {
           <input
             type="checkbox"
             checked={!!waiverData.waiverAgreed}
+            onClick={handleCheckboxClick}
             onChange={handleChange("waiverAgreed")}
-            disabled={!hasScrolledToEnd}
             style={{ accentColor: "#d64339" }}
-            className="w-5 h-5 mt-0.5 flex-shrink-0"
+            className={
+              "w-5 h-5 mt-0.5 flex-shrink-0" +
+              (hasScrolledToEnd ? "" : " opacity-50 cursor-not-allowed")
+            }
           />
           <span className="text-gray-900">
             I am the parent/legal guardian and I agree to the waiver
           </span>
         </label>
+        {scrollWarning && !hasScrolledToEnd && (
+          <p className="text-red-500 text-sm mt-2">
+            Please scroll to the bottom of the waiver to continue.
+          </p>
+        )}
         {errors.waiverAgreed && (
           <p className="text-red-500 text-sm mt-2">{errors.waiverAgreed}</p>
         )}
