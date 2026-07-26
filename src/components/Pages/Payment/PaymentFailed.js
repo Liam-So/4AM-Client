@@ -17,7 +17,6 @@ function PaymentFailed() {
                         <div className="pt-3 text-center text-gray-400 text-s font-semibold">
                             <p>There was an error processing your payment request.</p>
                         </div>
-
                         <div className="pt-2 text-center text-gray-400 text-s font-semibold">
                             <p>We are sorry for the inconvenience... Please try again.</p>
                         </div>
