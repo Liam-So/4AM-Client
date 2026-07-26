@@ -39,8 +39,4 @@ export const SidebarData = [
     title: "Donate",
     path: "/donate",
   },
-  {
-    title: "Cart",
-    path: "/cart",
-  },
 ];

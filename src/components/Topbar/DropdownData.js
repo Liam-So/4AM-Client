@@ -34,10 +34,4 @@ export const DropdownData = [
 
     subNav: [],
   },
-  {
-    title: "Cart",
-    path: "/cart",
-
-    subNav: [],
-  },
 ];

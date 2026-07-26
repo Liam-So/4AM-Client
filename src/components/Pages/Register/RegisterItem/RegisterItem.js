@@ -17,11 +17,11 @@ function RegisterItem({ product }) {
             <p className="text-xl text-gray-900 font-bold">{product.name}</p>
             <p className="font-bold text-xl">${product.price}</p>
           </div>
-          <div className="flex justify-between items-center">
-            <p className="pt-3 text-m text-gray-500">{product.description}</p>
+          <p className="pt-3 text-m text-gray-500 text-center">{product.description}</p>
+          <div className="flex justify-center mt-4">
             <button
               type="button"
-              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded whitespace-nowrap ml-2"
+              className="bg-brand hover:bg-brand-dark text-white text-sm font-medium py-2 px-6 rounded"
             >
               Register Now
             </button>

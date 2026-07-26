@@ -24,7 +24,33 @@ function Field({ label, subtext, required, error, children }) {
 }
 
 const inputClasses =
-  "w-full max-w-md border-b-2 border-gray-200 focus:border-blue-600 outline-none py-2 px-1 text-gray-800 transition-colors bg-transparent";
+  "w-full max-w-md border-b-2 border-gray-200 focus:border-brand outline-none py-2 px-1 text-gray-800 transition-colors bg-transparent";
+
+// Simple radio group: each option is a label + native radio input so it
+// stays accessible and keyboard-friendly, styled with the brand color.
+function RadioGroup({ name, options, value, onChange }) {
+  return (
+    <div className="flex flex-wrap gap-x-6 gap-y-2">
+      {options.map((option) => (
+        <label
+          key={option}
+          className="flex items-center gap-2 text-gray-800 cursor-pointer"
+        >
+          <input
+            type="radio"
+            name={name}
+            value={option}
+            checked={value === option}
+            onChange={onChange}
+            style={{ accentColor: "#d64339" }}
+            className="w-4 h-4"
+          />
+          {option}
+        </label>
+      ))}
+    </div>
+  );
+}
 
 function RegistrationForm({ formData, onChange, tshirtSubtext, onSubmit }) {
   const [errors, setErrors] = useState({});
@@ -89,20 +115,12 @@ function RegistrationForm({ formData, onChange, tshirtSubtext, onSubmit }) {
       </Field>
 
       <Field label="Grade (starting in Sept.)" required error={errors.grade}>
-        <select
-          className={inputClasses + " max-w-xs bg-white"}
+        <RadioGroup
+          name="grade"
+          options={GRADES}
           value={formData.grade || ""}
           onChange={handleChange("grade")}
-        >
-          <option value="" disabled>
-            Select grade
-          </option>
-          {GRADES.map((g) => (
-            <option key={g} value={g}>
-              {g}
-            </option>
-          ))}
-        </select>
+        />
       </Field>
 
       <Field label="School" required error={errors.school}>
@@ -160,23 +178,18 @@ function RegistrationForm({ formData, onChange, tshirtSubtext, onSubmit }) {
       </Field>
 
       <Field label="T-Shirt Size" subtext={tshirtSubtext} required error={errors.tshirtSize}>
-        <select
-          className={inputClasses + " max-w-xs bg-white"}
+        <RadioGroup
+          name="tshirtSize"
+          options={TSHIRT_SIZES}
           value={formData.tshirtSize || ""}
           onChange={handleChange("tshirtSize")}
-        >
-          <option value="" disabled>
-            Select size
-          </option>
-          {TSHIRT_SIZES.map((size) => (
-            <option key={size} value={size}>
-              {size}
-            </option>
-          ))}
-        </select>
+        />
       </Field>
 
-      <Field label="Please let us know if you have any additional comments for us (e.g., can't attend Session #3, etc.).">
+      <Field
+        label="Please let us know if you have any additional comments for us."
+        subtext="For example, can't attend Session #3."
+      >
         <textarea
           className={inputClasses + " resize-none"}
           rows={3}
@@ -188,9 +201,9 @@ function RegistrationForm({ formData, onChange, tshirtSubtext, onSubmit }) {
       <div className="pt-6 flex justify-end">
         <button
           type="submit"
-          className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-3 px-8 rounded"
+          className="bg-brand hover:bg-brand-dark text-white font-medium py-3 px-8 rounded"
         >
-          Next: Payment
+          Continue to Payment
         </button>
       </div>
     </form>

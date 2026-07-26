@@ -8,7 +8,12 @@ module.exports = {
       secondary: "#1c2237",
       danger: "#e3342f",
     }),
-    extend: {},
+    extend: {
+      colors: {
+        brand: "#d64339",
+        "brand-dark": "#b3372e",
+      },
+    },
   },
   variants: {
     extend: {},

@@ -5,20 +5,14 @@ import {
   IconButton,
   List,
   Container,
-  Badge,
 } from "@material-ui/core";
 import { DropdownData } from "./DropdownData";
 import "./Topbar.css";
 import { Link } from "react-router-dom";
 import Logo from "../../images/logo.png";
 import Sidebar from "../Sidebar/Sidebar";
-import { ShoppingCart } from "@material-ui/icons";
-import { useStateValue } from "../StateProvider";
-import { getTotalItems } from "../reducer";
 
 function Topbar({ transparent }) {
-  const [{ basket }] = useStateValue();
-
   return (
     <AppBar position="static" color="secondary" elevation={0}>
       <Toolbar>
@@ -52,17 +46,7 @@ function Topbar({ transparent }) {
                           : "dropbtn hover:bg-gray-300 rounded-t-lg"
                       }
                     >
-                      {item.title === "Cart" ? (
-                        <Badge
-                          badgeContent={getTotalItems(Object.values(basket))}
-                          color="secondary"
-                        >
-                          {" "}
-                          <ShoppingCart />{" "}
-                        </Badge>
-                      ) : (
-                        item.title
-                      )}
+                      {item.title}
                     </button>
                   </Link>
                   <div className="dropdown-content rounded-b-lg rounded-tr-lg">

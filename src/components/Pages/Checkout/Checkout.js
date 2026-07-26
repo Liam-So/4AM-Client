@@ -182,7 +182,7 @@ function Checkout() {
         >
           <button
             onClick={fetchProduct}
-            className="bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-6 rounded"
+            className="bg-brand hover:bg-brand-dark text-white font-medium py-2 px-6 rounded"
           >
             Try Again
           </button>
@@ -212,11 +212,11 @@ function Checkout() {
           <p className="text-gray-500 mt-2">${product.price} CAD</p>
 
           <div className="flex justify-center items-center gap-4 mt-6 text-sm font-medium">
-            <span className={step === "form" ? "text-blue-600" : "text-gray-400"}>
-              Step 1: Registration Details
+            <span className={step === "form" ? "text-brand" : "text-gray-400"}>
+              Step 1: Registration Form
             </span>
             <span className="text-gray-300">&rarr;</span>
-            <span className={step === "payment" ? "text-blue-600" : "text-gray-400"}>
+            <span className={step === "payment" ? "text-brand" : "text-gray-400"}>
               Step 2: Payment
             </span>
           </div>
@@ -254,7 +254,7 @@ function Checkout() {
                 onClick={() => setStep("form")}
                 className="text-gray-500 underline text-sm"
               >
-                Back to registration details
+                Back to Registration Form
               </button>
             </div>
           </div>
