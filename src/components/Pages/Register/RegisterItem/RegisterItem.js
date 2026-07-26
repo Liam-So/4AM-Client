@@ -1,34 +1,13 @@
 import React from "react";
-import { Card, CardMedia, CardContent, IconButton } from "@material-ui/core";
-import { AddShoppingCart } from "@material-ui/icons";
+import { Link } from "react-router-dom";
+import { Card, CardMedia, CardContent } from "@material-ui/core";
 import useStyles from "./styles";
-import { useStateValue } from "../../../StateProvider";
 
 function RegisterItem({ product }) {
   const classes = useStyles();
 
-  // eslint-disable-next-line
-  const [{ basket }, dispatch] = useStateValue();
-
-  const addToBasket = () => {
-    dispatch({
-      type: "ADD_TO_BASKET",
-      item: {
-        _id: product._id,
-        id: product.id,
-        title: product.name,
-        type: product.type,
-        image: product.img,
-        price: product.price,
-        description: product.description,
-        quantity: product.quantity,
-        sku: product.sku,
-      },
-    });
-  };
-
   return (
-    <div>
+    <Link to={`/checkout/${product._id}`} style={{ textDecoration: "none" }}>
       <Card className={classes.root}>
         <CardMedia title={product.name}>
           <img className={classes.image} src={product.img} alt={product.name} />
@@ -38,15 +17,18 @@ function RegisterItem({ product }) {
             <p className="text-xl text-gray-900 font-bold">{product.name}</p>
             <p className="font-bold text-xl">${product.price}</p>
           </div>
-          <div className="flex justify-between">
+          <div className="flex justify-between items-center">
             <p className="pt-3 text-m text-gray-500">{product.description}</p>
-            <IconButton onClick={addToBasket} aria-label="Add to Cart">
-              <AddShoppingCart />
-            </IconButton>
+            <button
+              type="button"
+              className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-medium py-2 px-4 rounded whitespace-nowrap ml-2"
+            >
+              Register Now
+            </button>
           </div>
         </CardContent>
       </Card>
-    </div>
+    </Link>
   );
 }
 

@@ -7,6 +7,7 @@ import Team from "./components/Pages/Our Team/Team";
 import Footer from "./components/Footer/Footer";
 import Cart from "./components/Pages/Cart/Cart";
 import Register from "./components/Pages/Register/Register";
+import Checkout from "./components/Pages/Checkout/Checkout";
 import Scholarship from "./components/Pages/Scholarship/Scholarship";
 import Gear from "./components/Pages/Gear/Gear";
 import Why from "./components/Pages/Why/Why";
@@ -25,6 +26,7 @@ function App() {
           <Route path="/team" exact component={Team} />
           <Route path="/cart" exact component={Cart} />
           <Route path="/register" exact component={Register} />
+          <Route path="/checkout/:id" exact component={Checkout} />
           <Route path="/scholarship" exact component={Scholarship} />
           <Route path="/gear" exact component={Gear} />
           <Route path="/why" exact component={Why} />

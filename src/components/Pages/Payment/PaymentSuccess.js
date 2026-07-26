@@ -13,13 +13,13 @@ function PaymentSuccess() {
                         <img className="w-32 h-32 rounded-full mx-auto" src={Check} alt="check"/>
                     </div>
                     <div className="p-2">
-                        <h3 className="text-center text-xl text-gray-900 font-medium leading-8 ">Your payment has been received.</h3>
+                        <h3 className="text-center text-xl text-gray-900 font-medium leading-8 ">Registration complete!</h3>
                         <div className="text-center text-gray-400 text-s font-semibold">
-                            <p>To complete registration please fill out the athlete info form which will be sent to your email.</p>
+                            <p>Your payment and registration details have both been received -- there's nothing else you need to do.</p>
                         </div>
 
                         <div className="pt-12 text-center text-gray-400 text-s font-semibold">
-                            <p>Looking forward to seeing you at the 4AM Camp!</p>
+                            <p>We'll email you with camp details the week before the event. Looking forward to seeing you at the 4AM Camp!</p>
                         </div>
                     </div>
                 </div>
